@@ -8,7 +8,7 @@ function TodoItem(props) {
         title,
         isDone,
         onDeleteTaskButtonClick,
-        onTaskComleteChange
+        onTaskCompleteChange
     } = props
 
     return (
@@ -19,7 +19,7 @@ function TodoItem(props) {
                 type="checkbox"
                 checked={isDone}
                 onChange={(event) => {
-                    onTaskComleteChange(id, event.target.checked)
+                    onTaskCompleteChange(id, event.target.checked)
                 }}
             />
             <label

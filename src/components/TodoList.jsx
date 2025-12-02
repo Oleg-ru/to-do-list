@@ -6,7 +6,7 @@ function TodoList(props) {
     const {
         tasks = [],
         onDeleteTaskButtonClick,
-        onTaskComleteChange,
+        onTaskCompleteChange,
     } = props
 
     const hasTasks = true;
@@ -22,7 +22,7 @@ function TodoList(props) {
                     className="todo__item"
                     key={task.id}
                     onDeleteTaskButtonClick={onDeleteTaskButtonClick}
-                    onTaskComleteChange={onTaskComleteChange}
+                    onTaskComleteChange={onTaskCompleteChange}
                     {...task}
                 />
             ))}
