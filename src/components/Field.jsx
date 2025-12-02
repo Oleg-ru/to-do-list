@@ -6,7 +6,8 @@ function Field(props) {
         className = '',
         id,
         label,
-        type = 'text'
+        type = 'text',
+        onInput,
     } = props;
 
     return (
@@ -23,6 +24,7 @@ function Field(props) {
                 placeholder=" "
                 autoComplete="off"
                 type={type}
+                onInput={onInput}
             />
         </div>
     );
