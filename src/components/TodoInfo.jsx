@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 
 function TodoInfo(props) {
 
@@ -18,11 +18,12 @@ function TodoInfo(props) {
             {hasTasks && (
                 <button className="todo__delete-all-button"
                         type="button"
-                        onClick={onDeleteAllButtonClick}>
+                        onClick={onDeleteAllButtonClick}
+                    >
                     Delete all
                 </button>)}
         </div>
     );
 }
 
-export default TodoInfo;
+export default memo(TodoInfo);
