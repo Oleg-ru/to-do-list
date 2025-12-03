@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Field from "./Field.jsx";
+import {TasksContext} from "../context/TasksContext.jsx";
 
-function SearchTaskForm(props) {
+function SearchTaskForm() {
 
     const {
         searchQuery,
         setSearchQuery,
-    } = props;
+    } = useContext(TasksContext);
 
     return (
         <form className="todo__form"
