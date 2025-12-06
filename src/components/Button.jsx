@@ -6,6 +6,7 @@ function Button(props) {
         className = '',
         type='button',
         children,
+        isDisabled,
         onClick,
     } = props
 
@@ -13,6 +14,7 @@ function Button(props) {
         <button
             className={`button ${className}`}
             type={type}
+            disabled={isDisabled}
             onClick={onClick}>{children}
         </button>
     );
